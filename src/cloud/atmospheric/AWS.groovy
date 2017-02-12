@@ -16,6 +16,6 @@ def regionList() {
 }
 
 class AWS {
-    string regions;
+
 }
 
