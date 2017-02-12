@@ -2,10 +2,10 @@ package cloud.atmospheric
 
 @Grab('com.amazonaws:aws-java-sdk:1.11.89')
 
-import com.amazonaws.services.ec2.AmazonEC2Client
+import com.amazonaws.services.ec2.AmazonEC2ClientBuilder
 
     def regionList() {
-        ec2 = new AmazonEC2Client()
+        ec2 = AmazonEC2Client.defaultClient()
         regions = ec2.describeRegions().getRegions()
 
         regionlist = ""
