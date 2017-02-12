@@ -4,7 +4,6 @@ package cloud.atmospheric
 
 import com.amazonaws.services.ec2.AmazonEC2Client
 
-class AWS {
     def regionList() {
         ec2 = new AmazonEC2Client()
         regions = ec2.describeRegions().getRegions()
@@ -15,5 +14,4 @@ class AWS {
         }
         retrun regionlist
     }
-}
 
