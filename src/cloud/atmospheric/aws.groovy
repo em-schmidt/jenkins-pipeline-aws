@@ -12,6 +12,6 @@ import com.amazonaws.services.ec2.AmazonEC2Client
         regions.each {
             regionlist += it.getRegionName() + "\n"
         }
-        retrun regionlist
+        return regionlist
     }
 
