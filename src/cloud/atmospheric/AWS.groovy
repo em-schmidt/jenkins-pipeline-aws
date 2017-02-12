@@ -3,7 +3,7 @@
 package cloud.atmospheric.AWS
 import com.amazonaws.services.ec2.AmazonEC2Client
 
-String regionslist {
+String regionslist () {
     ec2 = new AmazonEC2Client()
     regions = ec2.describeRegions().getRegions()
 
