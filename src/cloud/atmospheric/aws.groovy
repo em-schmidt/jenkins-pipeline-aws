@@ -5,7 +5,7 @@ package cloud.atmospheric
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder
 
     def regionList() {
-        ec2 = AmazonEC2Client.defaultClient()
+        ec2 = AmazonEC2ClientBuilder.defaultClient()
         regions = ec2.describeRegions().getRegions()
 
         regionlist = ""
