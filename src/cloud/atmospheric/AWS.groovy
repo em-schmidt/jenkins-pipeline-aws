@@ -1,7 +1,7 @@
 package cloud.atmospheric.AWS
 
 import groovy.grape.Grape
-Grape.grab(group:'com.amazonaws' module:'aws-java-sdk' version:'1.11.89')
+Grape.grab(group:'com.amazonaws', module:'aws-java-sdk', version:'1.11.89')
 
 import com.amazonaws.services.ec2.AmazonEC2Client
 
