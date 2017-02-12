@@ -1,3 +1,4 @@
+package cloud.atmospheric
 
 @Grab('com.amazonaws:aws-java-sdk:1.11.89')
 
