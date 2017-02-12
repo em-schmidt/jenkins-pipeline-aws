@@ -15,3 +15,7 @@ def regionList() {
     retrun regionlist
 }
 
+class AWS {
+    string regions;
+}
+
